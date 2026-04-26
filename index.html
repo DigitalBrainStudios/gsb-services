@@ -3,206 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GS Services</title>
+<title>GSB Services</title>
 
-<style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background-color: #0f172a;
-        color: #e2e8f0;
-    }
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-    a { text-decoration: none; color: inherit; }
-
-    /* NAVBAR */
-    nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 20px 60px;
-        background: #020617;
-        position: sticky;
-        top: 0;
-    }
-
-    nav h1 {
-        color: #38bdf8;
-    }
-
-    nav ul {
-        display: flex;
-        gap: 25px;
-        list-style: none;
-    }
-
-    /* HERO */
-    .hero {
-        text-align: center;
-        padding: 100px 20px;
-    }
-
-    .hero h2 {
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-
-    .hero p {
-        color: #94a3b8;
-        max-width: 600px;
-        margin: auto;
-    }
-
-    .cta {
-        margin-top: 30px;
-        padding: 15px 30px;
-        background: #38bdf8;
-        color: black;
-        border-radius: 8px;
-        font-weight: bold;
-    }
-
-    /* FEATURES */
-    .features {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 60px;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        background: #020617;
-        padding: 25px;
-        border-radius: 12px;
-        width: 280px;
-    }
-
-    /* VIDEO */
-    .video {
-        text-align: center;
-        padding: 60px;
-    }
-
-    iframe {
-        border-radius: 12px;
-        width: 80%;
-        height: 400px;
-    }
-
-    /* SOCIAL PROOF */
-    .social-proof {
-        text-align: center;
-        padding: 60px;
-    }
-
-    .logos {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        opacity: 0.7;
-    }
-
-    /* PRICING */
-    .pricing {
-        display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding: 60px;
-        flex-wrap: wrap;
-    }
-
-    .price-card {
-        background: #020617;
-        padding: 30px;
-        border-radius: 12px;
-        width: 260px;
-        text-align: center;
-    }
-
-    .price {
-        font-size: 32px;
-        margin: 20px 0;
-        color: #38bdf8;
-    }
-
-    /* CONTACT */
-    .contact {
-        text-align: center;
-        padding: 60px;
-    }
-
-    input, textarea {
-        width: 300px;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 6px;
-        border: none;
-    }
-
-    button {
-        padding: 12px 25px;
-        background: #38bdf8;
-        border: none;
-        border-radius: 6px;
-        font-weight: bold;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        color: #64748b;
-    }
-</style>
-
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
 <!-- NAVBAR -->
 <nav>
-    <h1>GS Services</h1>
+    <h1>GSB Services</h1>
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
 <!-- HERO -->
-<section class="hero">
-    <h2>Smart Financial Solutions for Your Business</h2>
-    <p>We provide expert Tax, GST, and Compliance services to help your business grow efficiently.</p>
-    <a href="#" class="cta">Get Started</a>
+<section id="home" class="hero" data-aos="fade-up">
+    <h2>Smart Financial Solutions</h2>
+    <p>Expert Tax, GST, and Advisory services for your business growth.</p>
+    <a href="#contact" class="cta">Get Started</a>
 </section>
 
-<!-- FEATURES -->
-<section class="features">
-    <div class="card">
+<!-- SERVICES -->
+<section id="services" class="features">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
         <h3>Tax Filing</h3>
-        <p>Accurate and timely income tax filing services.</p>
+        <p>Accurate income tax filing services.</p>
     </div>
-    <div class="card">
+
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
         <h3>GST Services</h3>
-        <p>GST registration, returns, and compliance made easy.</p>
+        <p>GST registration & compliance.</p>
     </div>
-    <div class="card">
+
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
         <h3>Business Advisory</h3>
-        <p>Professional guidance to grow your business.</p>
+        <p>Professional growth guidance.</p>
     </div>
 </section>
 
 <!-- VIDEO -->
-<section class="video">
-    <h2>Watch Our Demo</h2>
+<section class="video" data-aos="zoom-in">
+    <h2>Watch Demo</h2>
     <video width="80%" controls autoplay muted loop>
-        <source src="video/Our Services.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+        <source src="video/demo.mp4" type="video/mp4">
     </video>
 </section>
 
 <!-- SOCIAL PROOF -->
-<section class="social-proof">
+<section class="social-proof" data-aos="fade-right">
     <h2>Trusted by Businesses</h2>
     <div class="logos">
         <span>Startup A</span>
@@ -212,28 +68,28 @@
 </section>
 
 <!-- PRICING -->
-<section class="pricing">
-    <div class="price-card">
+<section id="pricing" class="pricing">
+    <div class="price-card" data-aos="flip-left">
         <h3>Basic</h3>
         <p class="price">₹999</p>
         <p>Tax Filing</p>
     </div>
 
-    <div class="price-card">
+    <div class="price-card" data-aos="flip-left" data-aos-delay="150">
         <h3>Standard</h3>
         <p class="price">₹2999</p>
         <p>GST + Tax</p>
     </div>
 
-    <div class="price-card">
+    <div class="price-card" data-aos="flip-left" data-aos-delay="300">
         <h3>Premium</h3>
         <p class="price">₹5999</p>
-        <p>All Services + Advisory</p>
+        <p>All Services</p>
     </div>
 </section>
 
 <!-- CONTACT -->
-<section class="contact">
+<section id="contact" class="contact" data-aos="fade-up">
     <h2>Contact Us</h2>
     <input type="text" placeholder="Your Name"><br>
     <input type="email" placeholder="Your Email"><br>
@@ -242,8 +98,17 @@
 </section>
 
 <footer>
-    © 2026 GS Services. All rights reserved.
+    © 2026 GSB Services
 </footer>
+
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({
+    duration: 1000,
+    once: true
+});
+</script>
 
 </body>
 </html>
