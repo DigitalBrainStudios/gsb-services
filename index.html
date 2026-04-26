@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GSB Services</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #0f172a;
+        color: #e2e8f0;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* NAVBAR */
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 60px;
+        background: #020617;
+        position: sticky;
+        top: 0;
+    }
+
+    nav h1 {
+        color: #38bdf8;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 25px;
+        list-style: none;
+    }
+
+    /* HERO */
+    .hero {
+        text-align: center;
+        padding: 100px 20px;
+    }
+
+    .hero h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        color: #94a3b8;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .cta {
+        margin-top: 30px;
+        padding: 15px 30px;
+        background: #38bdf8;
+        color: black;
+        border-radius: 8px;
+        font-weight: bold;
+    }
+
+    /* FEATURES */
+    .features {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        background: #020617;
+        padding: 25px;
+        border-radius: 12px;
+        width: 280px;
+    }
+
+    /* VIDEO */
+    .video {
+        text-align: center;
+        padding: 60px;
+    }
+
+    iframe {
+        border-radius: 12px;
+        width: 80%;
+        height: 400px;
+    }
+
+    /* SOCIAL PROOF */
+    .social-proof {
+        text-align: center;
+        padding: 60px;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        opacity: 0.7;
+    }
+
+    /* PRICING */
+    .pricing {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 60px;
+        flex-wrap: wrap;
+    }
+
+    .price-card {
+        background: #020617;
+        padding: 30px;
+        border-radius: 12px;
+        width: 260px;
+        text-align: center;
+    }
+
+    .price {
+        font-size: 32px;
+        margin: 20px 0;
+        color: #38bdf8;
+    }
+
+    /* CONTACT */
+    .contact {
+        text-align: center;
+        padding: 60px;
+    }
+
+    input, textarea {
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 6px;
+        border: none;
+    }
+
+    button {
+        padding: 12px 25px;
+        background: #38bdf8;
+        border: none;
+        border-radius: 6px;
+        font-weight: bold;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        color: #64748b;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>GSB Services</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h2>Smart Financial Solutions for Your Business</h2>
+    <p>We provide expert Tax, GST, and Compliance services to help your business grow efficiently.</p>
+    <a href="#" class="cta">Get Started</a>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <div class="card">
+        <h3>Tax Filing</h3>
+        <p>Accurate and timely income tax filing services.</p>
+    </div>
+    <div class="card">
+        <h3>GST Services</h3>
+        <p>GST registration, returns, and compliance made easy.</p>
+    </div>
+    <div class="card">
+        <h3>Business Advisory</h3>
+        <p>Professional guidance to grow your business.</p>
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video">
+    <h2>See How It Works</h2>
+    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+</section>
+
+<!-- SOCIAL PROOF -->
+<section class="social-proof">
+    <h2>Trusted by Businesses</h2>
+    <div class="logos">
+        <span>Startup A</span>
+        <span>Company B</span>
+        <span>Firm C</span>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing">
+    <div class="price-card">
+        <h3>Basic</h3>
+        <p class="price">₹999</p>
+        <p>Tax Filing</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Standard</h3>
+        <p class="price">₹2999</p>
+        <p>GST + Tax</p>
+    </div>
+
+    <div class="price-card">
+        <h3>Premium</h3>
+        <p class="price">₹5999</p>
+        <p>All Services + Advisory</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name"><br>
+    <input type="email" placeholder="Your Email"><br>
+    <textarea placeholder="Your Message"></textarea><br>
+    <button>Submit</button>
+</section>
+
+<footer>
+    © 2026 GSB Services. All rights reserved.
+</footer>
+
+</body>
+</html>
